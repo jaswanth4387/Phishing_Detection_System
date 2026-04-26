@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ratio | PhishGuard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ✅ Bootstrap (IMPORTANT for progress bars) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/analytics.css' %}">
+</head>
+
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <span class="navbar-brand">🔐 PhishGuard Admin</span>
+
+        <div>
+            <a class="text-white me-3" href="{% url 'dashboard' %}">Dashboard</a>
+            <a class="text-info me-3 fw-bold" href="{% url 'ratio' %}">Ratio</a>
+            <a class="text-white" href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 🔹 MAIN -->
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">⚖️ Phishing vs Safe Ratio</h2>
+
+    <div class="card-box">
+
+        <!-- PHISHING -->
+        <p class="mb-1">Phishing: {{ phishing_ratio|default:"0" }}%</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-danger"
+                 style="width: {{ phishing_ratio|default:'0' }}%;">
+            </div>
+        </div>
+
+        <!-- SAFE -->
+        <p class="mb-1">Safe: {{ safe_ratio|default:"0" }}%</p>
+        <div class="progress">
+            <div class="progress-bar bg-success"
+                 style="width: {{ safe_ratio|default:'0' }}%;">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

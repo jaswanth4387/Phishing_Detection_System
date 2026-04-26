@@ -1,0 +1,73 @@
+body {
+    background: #0d1117;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.nav-link-custom {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link-custom:hover {
+    color: #58a6ff;
+}
+
+.nav-link-custom.active {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+/* Title */
+h2 {
+    color: #58a6ff;
+}
+
+/* Cards */
+.card-box {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(88,166,255,0.2);
+    transition: 0.3s;
+}
+
+.card-box h5 {
+    color: #58a6ff;
+}
+
+.card-box p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Hover Glow */
+.hover-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(88,166,255,0.6);
+}
+
+/* Buttons */
+.btn-custom {
+    background: #238636;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #2ea043;
+    transform: scale(1.05);
+}
+
+/* Chart */
+.chart-container {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(88,166,255,0.2);
+}

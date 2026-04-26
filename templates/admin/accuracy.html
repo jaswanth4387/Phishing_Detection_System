@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accuracy</title>
+    <link rel="stylesheet" href="{% static 'css/analytics.css' %}">
+</head>
+
+<body>
+
+<div class="container center">
+
+    <div class="card-box text-center">
+        <h2>🎯 Model Accuracy</h2>
+        <h1 id="accuracyValue">{{ accuracy }}%</h1>
+    </div>
+
+</div>
+
+<script src="{% static 'js/accuracy.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+
+            <h3 class="title">URL Prediction</h3>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <textarea class="form-control mb-3" name="url" rows="4" placeholder="Enter URL"></textarea>
+
+                <button class="btn btn-custom w-100">Predict</button>
+            </form>
+
+            {% if objs %}
+            <div class="mt-4 text-center">
+                <h4>Result:</h4>
+                <h3 class="text-danger">{{ objs }}</h3>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

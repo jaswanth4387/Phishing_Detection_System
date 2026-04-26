@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charts</title>
+    <link rel="stylesheet" href="{% static 'css/analytics.css' %}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2 class="text-center">📊 Prediction Analytics</h2>
+
+    <div class="card-box">
+        <canvas id="chart"></canvas>
+    </div>
+
+</div>
+
+<script>
+    window.phishing = parseInt("{{ phishing_count|default:'0' }}");
+    window.safe = parseInt("{{ safe_count|default:'0' }}");
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'js/charts.js' %}"></script>
+
+</body>
+</html>

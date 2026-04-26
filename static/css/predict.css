@@ -1,0 +1,52 @@
+body {
+    background: #0d1117;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Card */
+.predict-card {
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #161b22;
+    box-shadow: 0 0 25px rgba(88,166,255,0.2);
+}
+
+/* Title */
+.predict-card h2 {
+    color: #58a6ff;
+}
+
+/* Input */
+.form-control {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+}
+
+.form-control:focus {
+    border: 1px solid #58a6ff;
+    box-shadow: 0 0 8px #58a6ff;
+    background: #0d1117;
+    color: white;
+}
+
+/* Button */
+.btn-predict {
+    background: #238636;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-predict:hover {
+    background: #2ea043;
+}
+
+/* Result box */
+.result-box {
+    padding: 15px;
+    border-radius: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+}

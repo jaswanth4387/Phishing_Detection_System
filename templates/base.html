@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Detection System</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+</head>
+
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold">🔐 PhishGuard</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light ms-2 px-3" href="{% url 'login' %}">
+                        Login / Register
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 🔹 HOME SECTION -->
+<section id="home" class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold">Detect Phishing URLs Instantly</h1>
+
+        <p class="lead mt-3">
+            Protect yourself from malicious links using AI-powered phishing detection.
+            Stay secure in the digital world.
+        </p>
+
+        <a href="{% url 'login' %}" class="btn btn-custom mt-4 px-4 py-2">
+            Get Started
+        </a>
+
+    </div>
+</section>
+
+<!-- 🔹 ABOUT SECTION -->
+<section id="about" class="about-section">
+    <div class="container">
+
+        <h2 class="text-center mb-4">About the Project</h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <p>
+                    This project is a cybersecurity solution designed to detect phishing URLs using
+                    hybrid machine learning techniques. It analyzes URL patterns and predicts whether
+                    a link is safe or malicious.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <ul>
+                    <li>✔ Machine Learning-based Detection</li>
+                    <li>✔ Real-time URL Analysis</li>
+                    <li>✔ Role-Based Access Control</li>
+                    <li>✔ Secure Authentication System</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- 🔹 FOOTER -->
+<footer class="text-center p-3 bg-dark text-white">
+    © 2026 PhishGuard | Cybersecurity Project
+</footer>
+
+<!-- JS -->
+<script src="{% static 'js/landing.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

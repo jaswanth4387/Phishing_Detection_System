@@ -1,0 +1,52 @@
+body {
+    background: #0d1117;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.nav-link-custom {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link-custom:hover {
+    color: #58a6ff;
+}
+
+.nav-link-custom.active {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+/* Title */
+h2 {
+    color: #58a6ff;
+}
+
+/* Table container */
+.table-container {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(88,166,255,0.2);
+}
+
+/* Hover effect */
+.table-hover tbody tr:hover {
+    background-color: #21262d;
+}
+
+/* Search */
+#searchInput {
+    background: #161b22;
+    border: 1px solid #30363d;
+    color: white;
+}
+
+#searchInput:focus {
+    border: 1px solid #58a6ff;
+    box-shadow: 0 0 8px #58a6ff;
+}

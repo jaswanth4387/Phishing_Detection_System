@@ -1,0 +1,50 @@
+body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    color: white;
+}
+
+.hero-section h1 {
+    color: #58a6ff;
+}
+
+.btn-custom {
+    background: #238636;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background: #2ea043;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background: #161b22;
+}
+
+.about-section h2 {
+    color: #58a6ff;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}

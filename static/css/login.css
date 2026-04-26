@@ -1,0 +1,85 @@
+body {
+    background: #0d1117;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center container */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.login-card {
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #161b22;
+    color: white;
+    box-shadow: 0 0 20px rgba(88,166,255,0.2);
+}
+
+/* Title */
+.login-card h2 {
+    color: #58a6ff;
+}
+
+/* Inputs */
+.form-control {
+    background: #0d1117;
+    border: 1px solid #000000;
+    background: white;
+    color: #100909;
+}
+
+.form-control:focus {
+    border: 1px solid #58a6ff;
+    box-shadow: 0 0 8px #58a6ff;
+    background: #ffffff;
+    color: rgb(1, 1, 1);
+}
+
+/* Password box */
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.password-box span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Button */
+.btn-login {
+    background: #238636;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-login:hover {
+    background: #2ea043;
+}
+
+/* Links */
+.link {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
