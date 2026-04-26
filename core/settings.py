@@ -28,8 +28,9 @@ SECRET_KEY = 'django-insecure-$ytr!7!82w7w_l!uq8&8xb%z=jju5pgyll@856b)n=-jb0xw%6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'phishing-detection-system-rujb.onrender.com'
+]
 
 # Application definition
 
