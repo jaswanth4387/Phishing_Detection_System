@@ -149,7 +149,7 @@ Either log in with a superuser, or create a group named `provider` in the Django
 - [ ] REST API endpoint for programmatic URL checks
 
 ---
-
+<!--
 ## 🤝 Contributing
 
 1. Fork the repo
@@ -158,7 +158,7 @@ Either log in with a superuser, or create a group named `provider` in the Django
 4. Open a Pull Request
 
 ---
-
+-->
 ## 👤 Author
 
 **Jakkampudi Jaswanth Krishna**
