@@ -166,6 +166,4 @@ GitHub: [@jaswanth4387](https://github.com/jaswanth4387)
 
 ---
 
-## 📄 License
 
-Add a license of your choice (e.g. MIT) in a `LICENSE` file.
